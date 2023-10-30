@@ -1,0 +1,14 @@
+z = int(input("Enter the number- "))
+for a in range(z):
+    n = a
+    b = str(a)
+    m = len(b)
+    cube = 0
+    while a != 0:
+        remainder = a % 10
+        a = a // 10
+        cube = remainder ** 3 + cube
+    if cube == n:
+        print(n,"is an armstrong number")
+    else:
+        print(n,"is not an armstrong number")
